@@ -1,4 +1,4 @@
-function createLibrary(libraryName, shelves, genre){
+function createLibrary(libraryName){
   var newLibrary = {
     name: libraryName,
     shelves: {
@@ -35,25 +35,6 @@ function checkoutBook(library, bookTitle, genre){
   return checkedOut ? `You have now checked out ${bookTitle} from the ${library.name}` :
   `Sorry, there are currently no copies of ${bookTitle} available at the ${library.name}`
 }
-
-
-
-
-
-
-
-
- //   if (genre === "fantasy") {
- //     library.shelves.fantasy.splice(i,1)
- //   } else if (genre === "fiction") {
- //      library.shelves.fiction.splice(i,1)
- //    } else if (genre === "nonFiction") {
- //      library.shelves.nonFiction.splice(i,1)
- //     }
- //     greeting = `You have now checked out ${book} from ${library}`;
- //     return greeting;
- //   }
- // }
 
 module.exports = {
   createLibrary,
