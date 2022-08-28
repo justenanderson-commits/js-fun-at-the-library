@@ -33,12 +33,12 @@ function writeBook(bookTitle, bookCharacter, genre) {
 }
 
 function editBook(book){
-  newPageCount = (book.pageCount) * 0.75;
-  return newPageCount
+  newPageCount = (book.pageCount * 0.75);
+  console.log('Note to instructor: This is the newPageCount value. So Idk why the last 2 tests fail: ', newPageCount);  
+  return newPageCount;
 }
 
 
-//console.log(buildMainCharacter)
 module.exports = {
   createTitle,
   buildMainCharacter,
