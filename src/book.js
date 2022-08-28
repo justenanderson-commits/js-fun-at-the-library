@@ -32,8 +32,8 @@ function writeBook(bookTitle, bookCharacter, genre) {
   return bookWriter;
 }
 
-function editBook(){
-  newPageCount = (bookWriter.pageCount) * 0.75;
+function editBook(book){
+  newPageCount = (book.pageCount) * 0.75;
   return newPageCount
 }
 
